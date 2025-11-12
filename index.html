@@ -143,6 +143,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -221,12 +224,12 @@ Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-20
 </blockquote>
 <p>– <span class="citation" data-cites="Brakewood2013-wj">Brakewood &amp; Poldrack (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p>
 </section>
-<section id="willingness-to-share" class="slide level2">
-<h2>Willingness to share</h2>
+<section class="slide level2">
+
 
 <img data-src="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0229003.g007&amp;type=large" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Tenopir2020-mq">Tenopir et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span> Fig 7</p></section>
-<section id="barriers" class="slide level2">
-<h2>Barriers…</h2>
+<section class="slide level2">
+
 
 <img data-src="include/img/tenopir-2000-fig-xx.png" class="scrollable r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Tenopir2020-mq">Tenopir et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span> Fig 7</p></section>
 <section class="slide level2">
@@ -285,6 +288,9 @@ Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-20
 </section>
 <section id="what-would-move-the-needle" class="slide level2">
 <h2>What would move the needle?</h2>
+</section>
+<section class="slide level2">
+
 
 <img data-src="include/img/houtkoop-2018-fig-04.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Houtkoop2018-tl">Houtkoop et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> Figure 3b</p></section>
 <section class="slide level2">
@@ -318,11 +324,11 @@ Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-20
 
 
 <img data-src="include/img/nih-2023-policy.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="National-Institutes-of-HealthUnknown-ys">National Institutes of Health (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p><ul>
-<li>NIH <strong>requires</strong> a data management and sharing plan.</li>
+<li>NIH now <strong>requires</strong> a data management and sharing plan.</li>
 </ul>
 </section>
-<section id="penn-state-policy" class="slide level2">
-<h2>Penn State policy</h2>
+<section class="slide level2">
+
 
 <img data-src="include/img/psu-rdm-policy.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="UnknownUnknown-hn"><span>“Research data management”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p></section>
 <section class="slide level2">
@@ -367,14 +373,245 @@ Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-20
 <li>Document</li>
 </ul>
 </section>
-<section id="plan" class="slide level2">
-<h2>Plan</h2>
+<section id="plan-your-work" class="slide level2">
+<h2>Plan your work</h2>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-proposal-to-project" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-proposal-to-project-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-proposal-to-project">flowchart LR
+  A(["Idea"]) --&gt; B["Proposal"]
+  B --&gt; C("Project_1")
+  B --&gt; D("Project_2")
+  D --&gt; E("Paper_2")
+  C --&gt; F("Paper_1")
+  E --&gt; G("Fame &amp; Glory")
+  F --&gt; G
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-proposal-to-project-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: From proposal to project
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-proposal-to-project-realistic" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-proposal-to-project-realistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-proposal-to-project-realistic">flowchart LR
+  A(["Idea"]) --&gt; B["Proposal"]
+  B --&gt; C("Project_1")
+  B --&gt; D("Project_2")
+  B --&gt; I("IRB protocol")
+  G(["Data mgmt plan"]) --&gt; B
+  G &lt;--&gt; I
+  C --&gt; I
+  D --&gt; I
+  D --&gt; E("Paper_2")
+  C --&gt; F("Paper_1")
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-proposal-to-project-realistic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: From proposal to project: More realistic
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-one-project" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-one-project-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-one-project">flowchart LR
+  A["Project_1"] --&gt; B["Survey"]
+  A --&gt; C["fMRI"]
+  A --&gt; D["Task_1"]
+  A --&gt; E["Task_2"]
+  B --&gt; P["Data_pipeline_1"]
+  C --&gt; Q["Data_pipeline_2"]
+  D --&gt; R["Data_pipeline_3"]
+  E --&gt; R
+  F["Data mgmt plan"] --- B &amp; C &amp; D &amp; E &amp; P &amp; Q &amp; R
+  P --&gt; G["Analysis_1"]
+  Q &amp; R --&gt; H["Analysis_2"]
+  G &amp; H --&gt; I["Poster"]
+  G &amp; H --&gt; J["Paper"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-one-project-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: One project workflow
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-one-project-w-sharing" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-one-project-w-sharing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-one-project-w-sharing">flowchart LR
+  A["Project_1"] --&gt; B["Survey"]
+  A --&gt; C["fMRI"]
+  A --&gt; D["Task_1"]
+  A --&gt; E["Task_2"]
+  B --&gt; P["Data_pipeline_1"]
+  C --&gt; Q["Data_pipeline_2"]
+  D --&gt; R["Data_pipeline_3"]
+  E --&gt; R
+  F["Data mgmt plan"] --- B &amp; C &amp; D &amp; E &amp; P &amp; Q &amp; R
+  P --&gt; G["Analysis_1"]
+  Q &amp; R --&gt; H["Analysis_2"]
+  G &amp; H --&gt; I["Poster"]
+  G &amp; H --&gt; J["Paper"]
+  B &amp; C &amp; D &amp; G &amp; H &amp; F --&gt; K["Data repository"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-one-project-w-sharing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: One project workflow with planned data sharing
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Lesson learned</strong></p>
+</div>
+<div class="callout-content">
+<p>Plan your workflow in as much detail as you possibly can before you start.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Lesson learned</strong></p>
+</div>
+<div class="callout-content">
+<p>Evaluate, revise, and update your <del>plan</del> protocol.</p>
+<p>Document what you changed, when, and why.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recommended practice</strong></p>
+</div>
+<div class="callout-content">
+<p>Version your protocol.</p>
+<p><em>Manual is fine</em>: e.g, <code>nsf-2412345-protocol-2025-12-02v01.docx</code>.</p>
+<p><em>Automated is better</em>: Google Docs keeps version histories. <a href="https://quarto.org">Quarto</a> enables git-versioned web sites as protocols.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+<ul>
+<li>Play &amp; Learning Across a Year (PLAY Project)
+<ul>
+<li>Project <a href="https://play-project.org">site</a> and <a href="https://play-project.org/collection.html">protocol</a></li>
+<li>Survey <a href="https://play-project.org/KoBoToolbox">data cleaning and visualization</a></li>
+</ul></li>
+<li>Open Scholarship Survey
+<ul>
+<li><a href="https://penn-state-open-science.github.io/survey-fall-2022/hrp-591.html">IRB protocol</a> + <a href="https://penn-state-open-science.github.io/survey-fall-2022/data-gathering-and-cleaning.html">data processing</a> and <a href="https://penn-state-open-science.github.io/survey-fall-2022/data-visualization.html">visualization pipeline</a></li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/soska-etal-fig-01.png"></p>
+<figcaption><span class="citation" data-cites="Soska2021-mh">Soska et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> Figure 1</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/soska-etal-fig-03.png"></p>
+<figcaption><span class="citation" data-cites="Soska2021-mh">Soska et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> Figure 3</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="projectfile-organization" class="slide level2">
+<h2>Project/file organization</h2>
+<ul>
+<li>Alaina’s awesome stuff</li>
+</ul>
 </section>
 <section id="automate" class="slide level2">
 <h2>Automate</h2>
+<ul>
+<li>Script/code everything you possibly can
+<ul>
+<li>Learn R, Python, shell scripting</li>
+<li>You can do it!</li>
+</ul></li>
+</ul>
 </section>
-<section id="document" class="slide level2">
-<h2>Document</h2>
+<section id="automate-1" class="slide level2">
+<h2>Automate</h2>
+<ul>
+<li>Multiple approaches
+<ul>
+<li>Pearce: Project-specific packages</li>
+<li>Gilmore: Executable Quarto documents</li>
+</ul></li>
+<li>Commonalities
+<ul>
+<li>Raw data live in secure place</li>
+<li>Use API calls to gather, clean, process</li>
+</ul></li>
+</ul>
+</section>
+<section id="where-to-share" class="slide level2">
+<h2>Where to share</h2>
 </section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">
@@ -407,6 +644,9 @@ Preparing your data management and sharing plan. (n.d.). Retrieved November 12, 
 </div>
 <div id="ref-UnknownUnknown-hn" class="csl-entry" role="listitem">
 Research data management. (n.d.). Retrieved November 12, 2025, from <a href="https://policy.psu.edu/policies/rp15">https://policy.psu.edu/policies/rp15</a>
+</div>
+<div id="ref-Soska2021-mh" class="csl-entry" role="listitem">
+Soska, K. C., Xu, M., Gonzalez, S. L., Herzberg, O., Tamis-LeMonda, C. S., Gilmore, R. O., &amp; Adolph, K. E. (2021). (Hyper)active data curation: A video case study from behavioral science. <em>Journal of Escience Librarianship</em>, <em>10</em>. <a href="https://doi.org/10.7191/jeslib.2021.1208">https://doi.org/10.7191/jeslib.2021.1208</a>
 </div>
 <div id="ref-Tenopir2020-mq" class="csl-entry" role="listitem">
 Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. <em>PloS One</em>, <em>15</em>, e0229003. <a href="https://doi.org/10.1371/journal.pone.0229003">https://doi.org/10.1371/journal.pone.0229003</a>

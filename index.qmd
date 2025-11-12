@@ -38,23 +38,21 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ## An ethical thing to do
 
->Whereas regulators of human subjects research often view data sharing solely in terms of potential risks to subjects, we argue that the principles of human subject research require an analysis of both risks
-and benefits...
+>Whereas regulators of human subjects research often view data sharing solely in terms of potential risks to subjects, we argue that the principles of human subject research require an analysis of both risks and benefits...
 
 -- @Brakewood2013-wj
 
 ## An ethical thing to do
 
->...such an analysis suggests that researchers may have a positive duty to share data in
-order to maximize the contribution that individual participants have made.
+>...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.
 
 -- @Brakewood2013-wj
 
-## Willingness to share
+---
 
 ![@Tenopir2020-mq Fig 7](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0229003.g007&type=large)
 
-## Barriers...
+---
 
 ![@Tenopir2020-mq Fig 7](include/img/tenopir-2000-fig-xx.png){.scrollable}
 
@@ -103,6 +101,8 @@ Other researchers
 
 ## What would move the needle?
 
+---
+
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
 
 ---
@@ -131,9 +131,9 @@ Other researchers
 
 ![@National-Institutes-of-HealthUnknown-ys](include/img/nih-2023-policy.png)
 
-- NIH **requires** a data management and sharing plan.
+- NIH now **requires** a data management and sharing plan.
 
-## Penn State policy
+---
 
 ![@UnknownUnknown-hn](include/img/psu-rdm-policy.png)
 
@@ -170,11 +170,154 @@ Other researchers
 - Automate
 - Document
 
-## Plan
+## Plan your work
+
+```{mermaid}
+%%| label: fig-proposal-to-project
+%%| fig-cap: "From proposal to project"
+flowchart LR
+  A(["Idea"]) --> B["Proposal"]
+  B --> C("Project_1")
+  B --> D("Project_2")
+  D --> E("Paper_2")
+  C --> F("Paper_1")
+  E --> G("Fame & Glory")
+  F --> G
+```
+
+---
+
+```{mermaid}
+%%| label: fig-proposal-to-project-realistic
+%%| fig-cap: "From proposal to project: More realistic"
+flowchart LR
+  A(["Idea"]) --> B["Proposal"]
+  B --> C("Project_1")
+  B --> D("Project_2")
+  B --> I("IRB protocol")
+  G(["Data mgmt plan"]) --> B
+  G <--> I
+  C --> I
+  D --> I
+  D --> E("Paper_2")
+  C --> F("Paper_1")
+```
+
+---
+
+```{mermaid}
+%%| label: fig-one-project
+%%| fig-cap: "One project workflow"
+flowchart LR
+  A["Project_1"] --> B["Survey"]
+  A --> C["fMRI"]
+  A --> D["Task_1"]
+  A --> E["Task_2"]
+  B --> P["Data_pipeline_1"]
+  C --> Q["Data_pipeline_2"]
+  D --> R["Data_pipeline_3"]
+  E --> R
+  F["Data mgmt plan"] --- B & C & D & E & P & Q & R
+  P --> G["Analysis_1"]
+  Q & R --> H["Analysis_2"]
+  G & H --> I["Poster"]
+  G & H --> J["Paper"]
+```
+
+---
+
+```{mermaid}
+%%| label: fig-one-project-w-sharing
+%%| fig-cap: "One project workflow with planned data sharing"
+flowchart LR
+  A["Project_1"] --> B["Survey"]
+  A --> C["fMRI"]
+  A --> D["Task_1"]
+  A --> E["Task_2"]
+  B --> P["Data_pipeline_1"]
+  C --> Q["Data_pipeline_2"]
+  D --> R["Data_pipeline_3"]
+  E --> R
+  F["Data mgmt plan"] --- B & C & D & E & P & Q & R
+  P --> G["Analysis_1"]
+  Q & R --> H["Analysis_2"]
+  G & H --> I["Poster"]
+  G & H --> J["Paper"]
+  B & C & D & G & H & F --> K["Data repository"]
+```
+
+---
+
+::: {.callout-important}
+## Lesson learned
+
+Plan your workflow in as much detail as you possibly can before you start.
+
+:::
+
+::: {.fragment}
+::: {.callout-important}
+## Lesson learned
+
+Evaluate, revise, and update your ~~plan~~ protocol.
+
+Document what you changed, when, and why.
+
+:::
+:::
+
+::: {.fragment}
+::: {.callout-note}
+## Recommended practice
+
+Version your protocol.
+
+*Manual is fine*: e.g, `nsf-2412345-protocol-2025-12-02v01.docx`.
+
+*Automated is better*: Google Docs keeps version histories. [Quarto](https://quarto.org) enables git-versioned web sites as protocols.
+
+:::
+:::
+
+## Examples
+
+- Play & Learning Across a Year (PLAY Project)
+  - Project [site](https://play-project.org) and [protocol](https://play-project.org/collection.html)
+  - Survey [data cleaning and visualization](https://play-project.org/KoBoToolbox)
+- Open Scholarship Survey
+  - [IRB protocol](https://penn-state-open-science.github.io/survey-fall-2022/hrp-591.html) + [data processing](https://penn-state-open-science.github.io/survey-fall-2022/data-gathering-and-cleaning.html) and [visualization pipeline](https://penn-state-open-science.github.io/survey-fall-2022/data-visualization.html)
+  
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![@Soska2021-mh Figure 1](include/img/soska-etal-fig-01.png)
+:::
+::: {.column width=50%}
+![@Soska2021-mh Figure 3](include/img/soska-etal-fig-03.png)
+:::
+::::
+
+## Project/file organization
+
+- Alaina's awesome stuff
 
 ## Automate
 
-## Document
+- Script/code everything you possibly can
+  - Learn R, Python, shell scripting
+  - You can do it!
+  
+## Automate
+
+- Multiple approaches
+  - Pearce: Project-specific packages
+  - Gilmore: Executable Quarto documents
+- Commonalities
+  - Raw data live in secure place
+  - Use API calls to gather, clean, process
+
+## Where to share
 
 # Resources
 
