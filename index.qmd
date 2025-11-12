@@ -6,12 +6,33 @@ author: "Rick Gilmore & Alaina Pearce"
 
 # Prelude
 
+---
+
+```{r}
+#| label: fig-sleic-talk-qr
+#| fig-cap: "https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/"
+plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/"))
+```
+
 ## Agenda
 
+- Who
 - Why (share data)
 - How to share data
   - Manage it well
   - Plan to share
+  - Implement your plan
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![](include/img/gilmore-rick.png){width="70%" fig-align="center"}
+:::
+::: {.column width=50%}
+![](include/img/pearce-alaina.jpeg){width="70%" fig-align="center"}
+:::
+::::
 
 # Why (share data)
 
@@ -133,9 +154,9 @@ Other researchers
 :::
 ::::
 
-# How
+# How to share data
 
-## Manage before you share
+## Manage it well
 
 ![Giphy](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRrM2I1aHE4amd3cno5dmtpMmM2eG5wbDI3ZGhudGxrZ24xc2t2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBjOqZ6h0ili0/giphy.gif)
 
@@ -149,7 +170,7 @@ Other researchers
 - Automate
 - Document
 
-## Plan your work
+## Plan
 
 ## Automate
 

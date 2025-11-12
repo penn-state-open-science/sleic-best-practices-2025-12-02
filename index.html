@@ -166,16 +166,41 @@ Rick Gilmore &amp; Alaina Pearce
 <h1>Prelude</h1>
 
 </section>
+<section class="slide level2">
+
+
+<img data-src="include/figfig-sleic-talk-qr-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-sleic-talk-qr"><p class="caption">
+Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/
+</p></section>
 <section id="agenda" class="slide level2">
 <h2>Agenda</h2>
 <ul>
+<li>Who</li>
 <li>Why (share data)</li>
 <li>How to share data
 <ul>
 <li>Manage it well</li>
 <li>Plan to share</li>
+<li>Implement your plan</li>
 </ul></li>
 </ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/gilmore-rick.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/pearce-alaina.jpeg" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+</figure>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="why-share-data" class="title-slide slide level1 center">
@@ -322,12 +347,12 @@ Rick Gilmore &amp; Alaina Pearce
 </div></div>
 </section></section>
 <section>
-<section id="how" class="title-slide slide level1 center">
-<h1>How</h1>
+<section id="how-to-share-data" class="title-slide slide level1 center">
+<h1>How to share data</h1>
 
 </section>
-<section id="manage-before-you-share" class="slide level2">
-<h2>Manage before you share</h2>
+<section id="manage-it-well" class="slide level2">
+<h2>Manage it well</h2>
 
 <img data-src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRrM2I1aHE4amd3cno5dmtpMmM2eG5wbDI3ZGhudGxrZ24xc2t2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBjOqZ6h0ili0/giphy.gif" class="r-stretch quarto-figure-center"><p class="caption">Giphy</p></section>
 <section id="pay-now-or-pay-later" class="slide level2">
@@ -342,8 +367,8 @@ Rick Gilmore &amp; Alaina Pearce
 <li>Document</li>
 </ul>
 </section>
-<section id="plan-your-work" class="slide level2">
-<h2>Plan your work</h2>
+<section id="plan" class="slide level2">
+<h2>Plan</h2>
 </section>
 <section id="automate" class="slide level2">
 <h2>Automate</h2>
@@ -358,7 +383,7 @@ Rick Gilmore &amp; Alaina Pearce
 </section>
 <section id="about" class="slide level2">
 <h2>About</h2>
-<p>This talk was produced using <a href="https://quarto.org">Quarto</a>, using the <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> Integrated Development Environment (IDE), version <code>r Sys.getenv("RSTUDIO_VER")</code>.</p>
+<p>This talk was produced using <a href="https://quarto.org">Quarto</a>, using the <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> Integrated Development Environment (IDE), version 2025.9.2.418.</p>
 <p>The source files are in R and R Markdown, then rendered to HTML using the <a href="https://revealjs.com">revealJS</a> framework. The HTML slides are hosted in a <a href="https://github.com/penn-state-open-science/sleic-best-practices-2025-12-01">GitHub repo</a> and served by GitHub pages: <a href="https://penn-state-open-science.github.io/sleic-best-practices-2025-12-01/" class="uri">https://penn-state-open-science.github.io/sleic-best-practices-2025-12-01/</a></p>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
@@ -606,6 +631,44 @@ Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … 
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
