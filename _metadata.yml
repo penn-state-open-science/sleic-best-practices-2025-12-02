@@ -1,6 +1,6 @@
 format: 
   revealjs:
-    footer: "Data management & sharing: Best practices | © 2025 by Rick Gilmore & Alaina Pearce under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+    footer: "[Data management & sharing: Best practices](https://github.com/penn-state-open-science/sleic-best-practices-2025-12-02) | © 2025 by Rick Gilmore & Alaina Pearce under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
     slide-number: true
     fig-align: center
     logo: https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg
@@ -15,4 +15,4 @@ format:
     citations-hover: true
 knitr:
   opts_chunk:
-    fig.path: include/fig
+    fig.path: include/fig/

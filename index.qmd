@@ -298,26 +298,62 @@ Version your protocol.
 :::
 ::::
 
+## Document procedures with video
+
+![@Gilmore2017-wd](include/img/nat-hum-beh.jpg)
+
+---
+
+{{< video https://databrary.org/assets/example-video-1-Dyoh4lqO.mp4 >}}
+
+-- @UnknownUnknown-vx
+
+---
+
+{{< video include/vid/collection-scheduling-initialrecruiting-phonecall-english.mp4 >}}
+
+-- @UnknownUnknown-ik
+
 ## Project/file organization
 
 - Alaina's awesome stuff
 
 ## Automate
 
-- Script/code everything you possibly can
+- Script/code *everything* you possibly can
   - Learn R, Python, shell scripting
   - You can do it!
+- Let the computer do tedious, repetitive, error-prone work
   
 ## Automate
 
 - Multiple approaches
   - Pearce: Project-specific packages
+  - Pearce: Using [REDcap](https://project-redcap.org) to capture project metadata
   - Gilmore: Executable Quarto documents
 - Commonalities
   - Raw data live in secure place
   - Use API calls to gather, clean, process
 
 ## Where to share
+
+- Imaging data: [OpenNeuro](https://openneuro.org)
+  - Use [BIDS](https://bids.neuroimaging.io)
+- Non-identifiable ([Level 1](https://security.psu.edu/awareness/icdt/)) data
+  - PSU's [ScholarSphere](https://scholarsphere.psu.edu)
+  - [Open Science Framework (OSF)](https://osf.io)
+  
+## Where to share
+
+- Identifiable data (esp. video, audio)
+  - [Databrary](https://databrary.org)
+  - [Inter-university Consortium for Political and Social Research (ICPSR)](https://www.icpsr.umich.edu/sites/icpsr/home)
+
+## Learn more
+
+- [Open Scholarship Initiative](https://penn-state-open-science.github.io)
+- Open Scholarship Bootcamp [2025](https://penn-state-open-science.github.io/bootcamp-2025/), [2023](https://penn-state-open-science.github.io/bootcamp-2023/)
+- Data management workshops [2025](https://penn-state-open-science.github.io/data-mgmt-2025/), [2024](https://penn-state-open-science.github.io/data-mgmt-2024/)
 
 # Resources
 

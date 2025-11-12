@@ -6,7 +6,9 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="index_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Rick Gilmore &amp; Alaina Pearce">
@@ -172,7 +174,7 @@ Rick Gilmore &amp; Alaina Pearce
 <section class="slide level2">
 
 
-<img data-src="include/figfig-sleic-talk-qr-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-sleic-talk-qr"><p class="caption">
+<img data-src="include/fig/fig-sleic-talk-qr-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-sleic-talk-qr"><p class="caption">
 Figure&nbsp;1: https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/
 </p></section>
 <section id="agenda" class="slide level2">
@@ -579,6 +581,20 @@ Figure&nbsp;5: One project workflow with planned data sharing
 </div>
 </div></div>
 </section>
+<section id="document-procedures-with-video" class="slide level2">
+<h2>Document procedures with video</h2>
+
+<img data-src="include/img/nat-hum-beh.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Gilmore2017-wd">Gilmore &amp; Adolph (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
+<section class="slide level2">
+
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://databrary.org/assets/example-video-1-Dyoh4lqO.mp4"></video>
+<p>– <span class="citation" data-cites="UnknownUnknown-vx"><span>“Databrary”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p>
+</section>
+<section class="slide level2">
+
+<video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="include/vid/collection-scheduling-initialrecruiting-phonecall-english.mp4"></video>
+<p>– <span class="citation" data-cites="UnknownUnknown-ik"><span>“PLAY project”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p>
+</section>
 <section id="projectfile-organization" class="slide level2">
 <h2>Project/file organization</h2>
 <ul>
@@ -588,11 +604,12 @@ Figure&nbsp;5: One project workflow with planned data sharing
 <section id="automate" class="slide level2">
 <h2>Automate</h2>
 <ul>
-<li>Script/code everything you possibly can
+<li>Script/code <em>everything</em> you possibly can
 <ul>
 <li>Learn R, Python, shell scripting</li>
 <li>You can do it!</li>
 </ul></li>
+<li>Let the computer do tedious, repetitive, error-prone work</li>
 </ul>
 </section>
 <section id="automate-1" class="slide level2">
@@ -601,6 +618,7 @@ Figure&nbsp;5: One project workflow with planned data sharing
 <li>Multiple approaches
 <ul>
 <li>Pearce: Project-specific packages</li>
+<li>Pearce: Using <a href="https://project-redcap.org">REDcap</a> to capture project metadata</li>
 <li>Gilmore: Executable Quarto documents</li>
 </ul></li>
 <li>Commonalities
@@ -612,6 +630,35 @@ Figure&nbsp;5: One project workflow with planned data sharing
 </section>
 <section id="where-to-share" class="slide level2">
 <h2>Where to share</h2>
+<ul>
+<li>Imaging data: <a href="https://openneuro.org">OpenNeuro</a>
+<ul>
+<li>Use <a href="https://bids.neuroimaging.io">BIDS</a></li>
+</ul></li>
+<li>Non-identifiable (<a href="https://security.psu.edu/awareness/icdt/">Level 1</a>) data
+<ul>
+<li>PSU’s <a href="https://scholarsphere.psu.edu">ScholarSphere</a></li>
+<li><a href="https://osf.io">Open Science Framework (OSF)</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="where-to-share-1" class="slide level2">
+<h2>Where to share</h2>
+<ul>
+<li>Identifiable data (esp.&nbsp;video, audio)
+<ul>
+<li><a href="https://databrary.org">Databrary</a></li>
+<li><a href="https://www.icpsr.umich.edu/sites/icpsr/home">Inter-university Consortium for Political and Social Research (ICPSR)</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="learn-more" class="slide level2">
+<h2>Learn more</h2>
+<ul>
+<li><a href="https://penn-state-open-science.github.io">Open Scholarship Initiative</a></li>
+<li>Open Scholarship Bootcamp <a href="https://penn-state-open-science.github.io/bootcamp-2025/">2025</a>, <a href="https://penn-state-open-science.github.io/bootcamp-2023/">2023</a></li>
+<li>Data management workshops <a href="https://penn-state-open-science.github.io/data-mgmt-2025/">2025</a>, <a href="https://penn-state-open-science.github.io/data-mgmt-2024/">2024</a></li>
+</ul>
 </section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">
@@ -633,11 +680,20 @@ Brakewood, B., &amp; Poldrack, R. A. (2013). The ethics of secondary data analys
 <div id="ref-UnknownUnknown-zt" class="csl-entry" role="listitem">
 Data management &amp; sharing policy overview. (n.d.). Retrieved November 12, 2025, from <a href="https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/policy-overview">https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms/policy-overview</a>
 </div>
+<div id="ref-UnknownUnknown-vx" class="csl-entry" role="listitem">
+Databrary: Obtaining sharing release. (n.d.). Retrieved November 12, 2025, from <a href="https://nyu.databrary.org/support/irb/examples">https://nyu.databrary.org/support/irb/examples</a>
+</div>
+<div id="ref-Gilmore2017-wd" class="csl-entry" role="listitem">
+Gilmore, R. O., &amp; Adolph, K. E. (2017). Video can make behavioural science more reproducible. <em>Nature Human Behaviour</em>, <em>1</em>, 0128. <a href="https://doi.org/10.1038/s41562-017-0128">https://doi.org/10.1038/s41562-017-0128</a>
+</div>
 <div id="ref-Houtkoop2018-tl" class="csl-entry" role="listitem">
 Houtkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., &amp; Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>, 70–85. <a href="https://doi.org/10.1177/2515245917751886">https://doi.org/10.1177/2515245917751886</a>
 </div>
 <div id="ref-National-Institutes-of-HealthUnknown-ys" class="csl-entry" role="listitem">
 National Institutes of Health. (n.d.). <span>NOT</span>-<span>OD</span>-21-013: Final <span>NIH</span> policy for data management and sharing. Retrieved October 24, 2021, from <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html</a>
+</div>
+<div id="ref-UnknownUnknown-ik" class="csl-entry" role="listitem">
+PLAY project: Collection overview. (n.d.). Retrieved November 12, 2025, from <a href="https://play-project.org/collection.html">https://play-project.org/collection.html</a>
 </div>
 <div id="ref-UnknownUnknown-da" class="csl-entry" role="listitem">
 Preparing your data management and sharing plan. (n.d.). Retrieved November 12, 2025, from <a href="https://www.nsf.gov/funding/data-management-plan">https://www.nsf.gov/funding/data-management-plan</a>
@@ -657,7 +713,7 @@ Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … 
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Data management &amp; sharing: Best practices | © 2025 by Rick Gilmore &amp; Alaina Pearce under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<p><a href="https://github.com/penn-state-open-science/sleic-best-practices-2025-12-02">Data management &amp; sharing: Best practices</a> | © 2025 by Rick Gilmore &amp; Alaina Pearce under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
 </div>
 </div></div>
 
@@ -1079,6 +1135,8 @@ Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … 
         }
       });
       </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
+    <script>videojs(video_shortcode_videojs_video2);</script>
     
 
 </body></html>
