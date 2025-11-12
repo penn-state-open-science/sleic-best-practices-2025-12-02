@@ -1,0 +1,18 @@
+format: 
+  revealjs:
+    footer: "Data management & sharing: Best practices | © 2025 by Rick Gilmore & Alaina Pearce under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+    slide-number: true
+    fig-align: center
+    logo: https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg
+    bibliography: [include/bib/refs.bib]
+    csl: include/bib/apa.csl
+    theme: [serif, include/css/psu.scss]
+    mainfont: roboto
+    code-fold: true
+    code-tools: true
+    chalkboard: true
+    link-external-icon: true
+    citations-hover: true
+knitr:
+  opts_chunk:
+    fig.path: include/fig

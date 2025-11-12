@@ -1,0 +1,170 @@
+---
+title: "Data management & sharing"
+subtitle: "Best practices"
+author: "Rick Gilmore & Alaina Pearce"
+---
+
+# Prelude
+
+## Agenda
+
+- Why (share data)
+- How to share data
+  - Manage it well
+  - Plan to share
+
+# Why (share data)
+
+## An ethical thing to do
+
+>Whereas regulators of human subjects research often view data sharing solely in terms of potential risks to subjects, we argue that the principles of human subject research require an analysis of both risks
+and benefits...
+
+-- @Brakewood2013-wj
+
+## An ethical thing to do
+
+>...such an analysis suggests that researchers may have a positive duty to share data in
+order to maximize the contribution that individual participants have made.
+
+-- @Brakewood2013-wj
+
+## Willingness to share
+
+![@Tenopir2020-mq Fig 7](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0229003.g007&type=large)
+
+## Barriers...
+
+![@Tenopir2020-mq Fig 7](include/img/tenopir-2000-fig-xx.png){.scrollable}
+
+---
+
+:::: {.columns}
+::: {.column width=40%}
+- Must publish first
+- No time, funding
+- No permission
+- Not required
+- No place to put
+- Insufficient skills
+:::
+::: {.column width=60%}
+![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
+:::
+::::
+
+---
+
+![@Houtkoop2018-tl](include/img/houtkoop-2018-title.png)
+
+---
+
+![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+
+---
+
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+Me
+
+![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+:::
+::: {.column width=50%}
+Other researchers
+
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
+:::
+::::
+
+## What would move the needle?
+
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+- Required by funder, journal, institution
+- Encouraged by funder, journal, institution
+- Easy, shown how
+- Garner citations, recognition, bigger/more grants
+:::
+::: {.column width=50%}
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
+:::
+::::
+
+## Funders think you should
+
+![@UnknownUnknown-da](include/img/nsf-data-sharing.png)
+
+---
+
+![@UnknownUnknown-zt](include/img/nih-2003-policy.png)
+
+---
+
+![@National-Institutes-of-HealthUnknown-ys](include/img/nih-2023-policy.png)
+
+- NIH **requires** a data management and sharing plan.
+
+## Penn State policy
+
+![@UnknownUnknown-hn](include/img/psu-rdm-policy.png)
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+- *Required by funder*, journal, institution
+- *Encouraged by funder*, journal, *institution*
+
+::: {.incremental}
+- **Easy, shown how**
+- **Garner citations, recognition, bigger/more grants**
+:::
+:::
+::: {.column width=50%}
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
+:::
+::::
+
+# How
+
+## Manage before you share
+
+![Giphy](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRrM2I1aHE4amd3cno5dmtpMmM2eG5wbDI3ZGhudGxrZ24xc2t2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBjOqZ6h0ili0/giphy.gif)
+
+## Pay now or pay later...
+
+![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
+
+## Principles
+
+- Plan your work, work your plan
+- Automate
+- Document
+
+## Plan your work
+
+## Automate
+
+## Document
+
+# Resources
+
+## About
+
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version `r Sys.getenv("RSTUDIO_VER")`.
+
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework. 
+The HTML slides are hosted in a [GitHub repo](https://github.com/penn-state-open-science/sleic-best-practices-2025-12-01) and served by GitHub pages: 
+<https://penn-state-open-science.github.io/sleic-best-practices-2025-12-01/>
+
+## References
