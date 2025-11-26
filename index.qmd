@@ -1,5 +1,5 @@
 ---
-title: "Data management & sharing"
+title: "Project & data management"
 subtitle: "Best practices"
 author: "Rick Gilmore & Alaina Pearce"
 ---
@@ -16,21 +16,18 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ## Agenda
 
-- Who
-- Why (share data)
-- How to share data
-  - Manage it well
-  - Plan to share
-  - Implement your plan
+- Why
+- How
+- Where
 
 ---
 
 :::: {.columns}
 ::: {.column width=50%}
-![](include/img/gilmore-rick.png){width="70%" fig-align="center"}
+![Rick Gilmore](include/img/gilmore-rick.png){width="70%" fig-align="center"}
 :::
 ::: {.column width=50%}
-![](include/img/pearce-alaina.jpeg){width="70%" fig-align="center"}
+![Alaina Pearce](include/img/pearce-alaina.jpeg){width="70%" fig-align="center"}
 :::
 ::::
 
@@ -38,13 +35,13 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ## An ethical thing to do
 
->Whereas regulators of human subjects research often view data sharing solely in terms of potential risks to subjects, we argue that the principles of human subject research require an analysis of both risks and benefits...
+>Whereas regulators of human subjects research often view data sharing solely in terms of potential risks to subjects, we argue that the **principles of human subject research require an analysis of both risks and benefits**...
 
 -- @Brakewood2013-wj
 
 ## An ethical thing to do
 
->...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.
+>...such an analysis suggests that **researchers may have a positive duty to share data** in order to maximize the contribution that individual participants have made.
 
 -- @Brakewood2013-wj
 
@@ -99,9 +96,7 @@ Other researchers
 :::
 ::::
 
-## What would move the needle?
-
----
+## Moving the needle
 
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
 
@@ -154,21 +149,23 @@ Other researchers
 :::
 ::::
 
-# How to share data
+# How
 
-## Manage it well
+---
 
 ![Giphy](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRrM2I1aHE4amd3cno5dmtpMmM2eG5wbDI3ZGhudGxrZ24xc2t2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBjOqZ6h0ili0/giphy.gif)
 
-## Pay now or pay later...
+---
 
 ![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
 
 ## Principles
 
 - Plan your work, work your plan
+- "Good enough" practices
 - Automate
 - Document
+- Get credit
 
 ## Plan your work
 
@@ -243,7 +240,31 @@ flowchart LR
   Q & R --> H["Analysis_2"]
   G & H --> I["Poster"]
   G & H --> J["Paper"]
-  B & C & D & G & H & F --> K["Data repository"]
+  C & D & G & H & F --> K["Data repository"]
+```
+
+---
+
+```{mermaid}
+%%| label: fig-one-project-w-sharing-multirepo
+%%| fig-cap: "Planned data sharing in multiple repositories"
+flowchart LR
+  A["Project_1"] --> B["Survey"]
+  A --> C["fMRI"]
+  A --> D["Task_1"]
+  A --> E["Task_2"]
+  B --> P["Data_pipeline_1"]
+  C --> Q["Data_pipeline_2"]
+  D --> R["Data_pipeline_3"]
+  E --> R
+  F["Data mgmt plan"] --- B & C & D & E & P & Q & R
+  P --> G["Analysis_1"]
+  Q & R --> H["Analysis_2"]
+  G & H --> I["Poster"]
+  G & H --> J["Paper"]
+  B & C & D & G & H & F --> K["OpenNeuro"]
+  B --> L["OSF"]
+  K --- L
 ```
 
 ---
@@ -259,7 +280,7 @@ Plan your workflow in as much detail as you possibly can before you start.
 ::: {.callout-important}
 ## Lesson learned
 
-Evaluate, revise, and update your ~~plan~~ protocol.
+Evaluate, revise, and update.
 
 Document what you changed, when, and why.
 
@@ -281,11 +302,18 @@ Version your protocol.
 
 ## Examples
 
+::: {.incremental}
+- Open Scholarship Survey
+  - [IRB protocol](https://penn-state-open-science.github.io/survey-fall-2022/hrp-591.html) + [data processing](https://penn-state-open-science.github.io/survey-fall-2022/data-gathering-and-cleaning.html) and [visualization pipeline](https://penn-state-open-science.github.io/survey-fall-2022/data-visualization.html)
 - Play & Learning Across a Year (PLAY Project)
   - Project [site](https://play-project.org) and [protocol](https://play-project.org/collection.html)
   - Survey [data cleaning and visualization](https://play-project.org/KoBoToolbox)
-- Open Scholarship Survey
-  - [IRB protocol](https://penn-state-open-science.github.io/survey-fall-2022/hrp-591.html) + [data processing](https://penn-state-open-science.github.io/survey-fall-2022/data-gathering-and-cleaning.html) and [visualization pipeline](https://penn-state-open-science.github.io/survey-fall-2022/data-visualization.html)
+
+:::
+
+---
+
+{{< video https://www.anhourinthelife.org/img/PLAY-parents-noaudio.mp4 >}}
   
 ---
 
@@ -298,7 +326,7 @@ Version your protocol.
 :::
 ::::
 
-## Document procedures with video
+---
 
 ![@Gilmore2017-wd](include/img/nat-hum-beh.jpg)
 
@@ -314,40 +342,164 @@ Version your protocol.
 
 -- @UnknownUnknown-ik
 
-## Project/file organization
+---
 
-- Alaina's awesome stuff
+:::: {.columns}
+::: {.column width=50%}
+{{< video include/vid/Head-camera-with-optic-flow-overlay.mp4 >}}
+:::
+::: {.column width=50%}
+{{< video include/vid/Head-camera-video-with-optic-flow-pattern-estimate.mp4 >}}
+
+{{< video include/vid/Head-camera-video-with-optic-flow-speed-estimate.mp4 >}}
+:::
+::::
+
+-- @Gilmore2015-oj
+
+---
+
+## Good Enough Practices (Alaina)
+
+1. Preserve Raw Data
+2. Create a Central Hub
+3. Use Meaningful Names
+
+## Good Enough Practices
+
+4. Preserve the Journey
+5. Avoid Manual Manipulations
+6. ‘Tidy’ Your Data
+7. Metadata Magic
 
 ## Automate
 
 - Script/code *everything* you possibly can
   - Learn R, Python, shell scripting
   - You can do it!
+  
+
+
+  
+## Automate
+
+- Capture data in electronic form
 - Let the computer do tedious, repetitive, error-prone work
   
 ## Automate
 
 - Multiple approaches
-  - Pearce: Project-specific packages
+  - Pearce: Project-specific R packages
   - Pearce: Using [REDcap](https://project-redcap.org) to capture project metadata
-  - Gilmore: Executable Quarto documents
+  - Gilmore: Executable [Quarto](https://quarto.org) documents, see Bootcamp 2025 Workshops [I](https://penn-state-open-science.github.io/bootcamp-2025-quarto-I/) and [II](https://penn-state-open-science.github.io/bootcamp-2025-quarto-II/)
 - Commonalities
   - Raw data live in secure place
   - Use API calls to gather, clean, process
 
-## Where to share
+# Where
 
-- Imaging data: [OpenNeuro](https://openneuro.org)
-  - Use [BIDS](https://bids.neuroimaging.io)
-- Non-identifiable ([Level 1](https://security.psu.edu/awareness/icdt/)) data
-  - PSU's [ScholarSphere](https://scholarsphere.psu.edu)
-  - [Open Science Framework (OSF)](https://osf.io)
+## Big picture
+
+- Privacy & permission
+- Type(s) of data
+- Repositories
+- Data papers
+
+## Privacy & permission
+
+- Ask your participants
+- Broad consent vs. narrow
+- Store sharing permission & consider sharing it
+- Pseudo-anonymizing
+  - May or may not be required
+
+## Type(s) of data
+
+- Imaging data
+- Non-identifiable
+- Identifiable
+
+## Imaging data 
+
+:::: {.columns}
+::: {.column width=40%}
+- [OpenNeuro](https://openneuro.org)
+- Use [BIDS](https://bids.neuroimaging.io)
+:::
+::: {.column width=60%}
+![<https://openneuro.org>](include/img/openneuro.png)
+:::
+::::
+
+## Imaging data
+
+:::: {.columns}
+::: {.column width=40%}
+- Use [BIDS](https://bids.neuroimaging.io)
+:::
+::: {.column width=60%}
+![](https://bids.neuroimaging.io/assets/img/dicom-reorganization-transparent-black_1000x477.png#only-light)
+:::
+::::
+
+## Non-identifiable data
+
+:::: {.columns}
+::: {.column width=40%}
+- [Level 1](https://security.psu.edu/awareness/icdt/) in Penn State's data classification
+- PSU's [ScholarSphere](https://scholarsphere.psu.edu)
+:::
+::: {.column width=60%}
+![<https://scholarsphere.psu.edu>](include/img/scholarsphere.png)
+:::
+::::
+
+## Non-identifable data
+
+:::: {.columns}
+::: {.column width=40%}
+- [Open Science Framework (OSF)](https://osf.io)
+:::
+::: {.column width=60%}
+![<https://osf.io>](include/img/osf.png)
+:::
+::::
   
-## Where to share
+## Identifiable data
 
-- Identifiable data (esp. video, audio)
-  - [Databrary](https://databrary.org)
-  - [Inter-university Consortium for Political and Social Research (ICPSR)](https://www.icpsr.umich.edu/sites/icpsr/home)
+:::: {.columns}
+::: {.column width=50%}
+- Especially video & audio
+- Can be shared *unaltered*
+:::
+::: {.column width=50%}
+![Giphy](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTFjajdmN3pmbDEzZ3BwYXprOXhoemI0ZG5xbGw4eXlucG85bGhhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/daPCSjwus6UR2JxRX1/giphy.gif)
+:::
+::::
+
+## Sharing identifiable data
+
+:::: {.columns}
+::: {.column width=40%}
+- [Databrary](https://databrary.org)
+- Among institutionally authorized researchers
+- With explicit participant permission
+:::
+::: {.column width=60%}
+![](https://databrary.org/assets/logo-nav-dQIvaOqh.svg)
+:::
+::::
+
+## Sharing identifiable data
+
+:::: {.columns}
+::: {.column width=50%}
+- [Inter-university Consortium for Political and Social Research (ICPSR)](https://www.icpsr.umich.edu/sites/icpsr/home)
+:::
+::: {.column width=50%}
+![<https://www.icpsr.umich.edu>](include/img/icpsr.png)
+:::
+::::
 
 ## Learn more
 
@@ -355,6 +507,27 @@ Version your protocol.
 - Open Scholarship Bootcamp [2025](https://penn-state-open-science.github.io/bootcamp-2025/), [2023](https://penn-state-open-science.github.io/bootcamp-2023/)
 - Data management workshops [2025](https://penn-state-open-science.github.io/data-mgmt-2025/), [2024](https://penn-state-open-science.github.io/data-mgmt-2024/)
 
+# Wrap-up
+
+## Take-homes
+
+- Why
+  - Sharing data maximizes benefits to participants, accelerates discovery
+  - Sharing data required by funders
+  
+## Take-homes
+
+- How
+  - Plan your work, work your plan
+  - Automate
+  - Make documentation a practice
+  
+## Take-homes
+
+- Where
+  - Imaging data
+  - Identifiable vs. non-identifiable
+  
 # Resources
 
 ## About
