@@ -127,6 +127,8 @@ Other researchers
 ![@National-Institutes-of-HealthUnknown-ys](include/img/nih-2023-policy.png)
 
 - NIH now **requires** a data management and sharing plan.
+- If not sharing, must justify reasons
+- If planning to share, plans become formal part of award agreement
 
 ---
 
@@ -137,7 +139,7 @@ Other researchers
 :::: {.columns}
 ::: {.column width=50%}
 - *Required by funder*, journal, institution
-- *Encouraged by funder*, journal, *institution*
+- *Encouraged by funder*, *journal*, *institution*
 
 ::: {.incremental}
 - **Easy, shown how**
@@ -377,21 +379,29 @@ Version your protocol.
 - Script/code *everything* you possibly can
   - Learn R, Python, shell scripting
   - You can do it!
-  
 
-
-  
 ## Automate
 
-- Capture data in electronic form
+- Capture data in electronic form as much as possible
+  - e.g., Qualtrix, Google Forms, REDCap, [KoBoToolbox](https://kobotoolbox.org)
 - Let the computer do tedious, repetitive, error-prone work
+  - e.g., data export & cleaning
+
+## Automate
+
+- Pearce
+  - Project-specific R packages
+  - Using [REDcap](https://project-redcap.org) to capture project metadata
   
 ## Automate
 
-- Multiple approaches
-  - Pearce: Project-specific R packages
-  - Pearce: Using [REDcap](https://project-redcap.org) to capture project metadata
-  - Gilmore: Executable [Quarto](https://quarto.org) documents, see Bootcamp 2025 Workshops [I](https://penn-state-open-science.github.io/bootcamp-2025-quarto-I/) and [II](https://penn-state-open-science.github.io/bootcamp-2025-quarto-II/)
+- Gilmore: Executable [Quarto](https://quarto.org) documents
+  - Bootcamp 2025 [site](https://penn-state-open-science.github.io/bootcamp-2025/)
+  - Bootcamp 2025 Workshops [I](https://penn-state-open-science.github.io/bootcamp-2025-quarto-I/) and [II](https://penn-state-open-science.github.io/bootcamp-2025-quarto-II/)
+  - Open Scholarship [Survey](https://penn-state-open-science.github.io/survey-fall-2022/)
+
+## Automate
+
 - Commonalities
   - Raw data live in secure place
   - Use API calls to gather, clean, process
