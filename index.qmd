@@ -1,6 +1,5 @@
 ---
-title: "Project & data management"
-subtitle: "Best practices"
+title: "Best practices in project & data management"
 author: "Rick Gilmore & Alaina Pearce"
 ---
 
@@ -16,7 +15,7 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ## Agenda
 
-- Why
+- Our hidden one
 - How
 - Where
 
@@ -31,7 +30,17 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 :::
 ::::
 
-# Why (share data)
+# Our hidden agenda
+
+## Best practices in
+
+- Project management
+- Data management
+- Enable sharing
+
+::: {.fragment}
+- Data sharing is
+:::
 
 ## An ethical thing to do
 
@@ -49,13 +58,16 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ![@Tenopir2020-mq Fig 7](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0229003.g007&type=large)
 
----
+## {auto-animate=true}
 
 ![@Tenopir2020-mq Fig 7](include/img/tenopir-2000-fig-xx.png){.scrollable}
 
----
+## {auto-animate=true}
 
 :::: {.columns}
+::: {.column width=60%}
+![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
+:::
 ::: {.column width=40%}
 - Must publish first
 - No time, funding
@@ -63,9 +75,6 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 - Not required
 - No place to put
 - Insufficient skills
-:::
-::: {.column width=60%}
-![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
 :::
 ::::
 
@@ -75,13 +84,17 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ---
 
-![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnl3aDlrZWZ2Nm9tcXh1czhvYjk4bjJlc2M3emR5dG96NnpldWx0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7abrH8o4HMgEAV9e/giphy.gif){fig-align="center"}
 
 ---
+
+![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+
+## {auto-animate=true}
 
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
 
----
+## {auto-animate=true}
 
 :::: {.columns}
 ::: {.column width=50%}
@@ -96,21 +109,21 @@ Other researchers
 :::
 ::::
 
-## Moving the needle
+## Moving the needle {auto-animate=true auto-animate-easing="ease-in-out"}
 
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
 
----
+## {auto-animate=true auto-animate-easing="ease-in-out"}
 
 :::: {.columns}
-::: {.column width=50%}
+::: {.column width=60%}
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
+:::
+::: {.column width=40%}
 - Required by funder, journal, institution
 - Encouraged by funder, journal, institution
 - Easy, shown how
 - Garner citations, recognition, bigger/more grants
-:::
-::: {.column width=50%}
-![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
 :::
 ::::
 
@@ -126,7 +139,7 @@ Other researchers
 
 ![@National-Institutes-of-HealthUnknown-ys](include/img/nih-2023-policy.png)
 
-- NIH now **requires** a data management and sharing plan.
+- NIH now **requires** a (2 p) data management and sharing plan
 - If not sharing, must justify reasons
 - If planning to share, plans become formal part of award agreement
 
@@ -165,8 +178,8 @@ Other researchers
 
 - Plan your work, work your plan
 - "Good enough" practices
-- Automate
 - Document
+- Automate
 - Get credit
 
 ## Plan your work
@@ -227,8 +240,8 @@ flowchart LR
 
 ```{mermaid}
 %%| label: fig-one-project-w-sharing
-%%| fig-cap: "One project workflow with planned data sharing"
-flowchart LR
+%%| fig-cap: "Planned data sharing to a repository"
+flowchart TD
   A["Project_1"] --> B["Survey"]
   A --> C["fMRI"]
   A --> D["Task_1"]
@@ -386,25 +399,38 @@ Version your protocol.
   - e.g., Qualtrix, Google Forms, REDCap, [KoBoToolbox](https://kobotoolbox.org)
 - Let the computer do tedious, repetitive, error-prone work
   - e.g., data export & cleaning
+  - Code as documentation
 
 ## Automate
 
-- Pearce
-  - Project-specific R packages
-  - Using [REDcap](https://project-redcap.org) to capture project metadata
-  
+:::: {.columns}
+::: {.column width=30%}
+![Alaina Pearce](include/img/pearce-alaina.jpeg){width="70%"}
+:::
+::: {.column width=70%}
+- Project-specific R packages
+- Using [REDcap](https://project-redcap.org) to capture project metadata
+:::
+::::
+
 ## Automate
 
-- Gilmore: Executable [Quarto](https://quarto.org) documents
+:::: {.columns}
+::: {.column width=30%}
+![Rick Gilmore](include/img/gilmore-rick.png){width="70%"}
+:::
+::: {.column width=70%}
+- Executable [Quarto](https://quarto.org) documents
   - Bootcamp 2025 [site](https://penn-state-open-science.github.io/bootcamp-2025/)
   - Bootcamp 2025 Workshops [I](https://penn-state-open-science.github.io/bootcamp-2025-quarto-I/) and [II](https://penn-state-open-science.github.io/bootcamp-2025-quarto-II/)
   - Open Scholarship [Survey](https://penn-state-open-science.github.io/survey-fall-2022/)
+:::
+::::
 
-## Automate
+## Common themes
 
-- Commonalities
-  - Raw data live in secure place
-  - Use API calls to gather, clean, process
+- Raw data live in secure place
+- Use API calls to gather, clean, process
 
 # Where
 
