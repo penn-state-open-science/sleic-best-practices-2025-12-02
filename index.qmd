@@ -473,6 +473,19 @@ Be kind to your future (forgetful) self.
 - Script/code *everything* you possibly can
   - Learn R, Python, shell scripting
   - You can do it!
+  
+## Automate
+
+```bash
+# These are bash shell commands
+mkdir -p project/{admin,protocol,data}
+mkdir -p project/admin/{financial,irb,meeting_documents,recruitment,research_assistants}
+mkdir -p project/data/sub-control01/{anat,func,dwi,fmap}
+```
+
+## Automate
+
+![](include/img/tree.png)
 
 ## Automate
 
