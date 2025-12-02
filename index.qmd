@@ -1,5 +1,6 @@
 ---
-title: "Best practices in project & data management"
+title: "Project & data management"
+subtitle: "Best practices"
 author: "Rick Gilmore & Alaina Pearce"
 ---
 
@@ -34,12 +35,17 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ## Best practices in
 
+::: {.incremental}
 - Project management
-- Data management
-- Enable sharing
+- $+$ Data management 
+- $\rightarrow$ Sharing
+:::
 
-::: {.fragment}
-- Data sharing is
+## Sharing...
+
+::: {.incremental}
+- Accelerates discovery
+- Bolsters credibility
 :::
 
 ## An ethical thing to do
@@ -54,13 +60,13 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 -- @Brakewood2013-wj
 
----
+## {auto-animate=true}
 
 ![@Tenopir2020-mq Fig 7](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0229003.g007&type=large)
 
 ## {auto-animate=true}
 
-![@Tenopir2020-mq Fig 7](include/img/tenopir-2000-fig-xx.png){.scrollable}
+![@Tenopir2020-mq Fig 8](include/img/tenopir-2000-fig-xx.png){width="150%"}
 
 ## {auto-animate=true}
 
@@ -69,12 +75,14 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 ![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
 :::
 ::: {.column width=40%}
+::: {.fragment}
 - Must publish first
 - No time, funding
 - No permission
 - Not required
 - No place to put
 - Insufficient skills
+:::
 :::
 ::::
 
@@ -86,9 +94,26 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 ![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnl3aDlrZWZ2Nm9tcXh1czhvYjk4bjJlc2M3emR5dG96NnpldWx0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7abrH8o4HMgEAV9e/giphy.gif){fig-align="center"}
 
----
+## {auto-animate=true}
 
 ![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+
+## {auto-animate=true}
+
+:::: {.columns}
+::: {.column width=60%}
+![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+:::
+::: {.column width=40%}
+::: {.fragment}
+- Misinterpretations of the data
+- Scooped
+- Control over IP
+- Unintended secondary use
+- Invalid conclusions, errors
+:::
+:::
+::::
 
 ## {auto-animate=true}
 
@@ -98,14 +123,15 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 :::: {.columns}
 ::: {.column width=50%}
-Me
-
-![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-2018-fig-03a.png)
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
 :::
 ::: {.column width=50%}
-Other researchers
-
-![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
+::: {.fragment}
+- Invalid conclusions
+- Control over IP
+- Errors
+- Misinterpretation
+:::
 :::
 ::::
 
@@ -120,10 +146,12 @@ Other researchers
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
 :::
 ::: {.column width=40%}
+::: {.fragment}
 - Required by funder, journal, institution
 - Encouraged by funder, journal, institution
 - Easy, shown how
 - Garner citations, recognition, bigger/more grants
+:::
 :::
 ::::
 
@@ -135,13 +163,21 @@ Other researchers
 
 ![@UnknownUnknown-zt](include/img/nih-2003-policy.png)
 
----
+## NIH Data Management and Sharing Plan (DMS)
 
-![@National-Institutes-of-HealthUnknown-ys](include/img/nih-2023-policy.png)
+> to promote the management and sharing of scientific data generated from NIH-funded or conducted research.
 
-- NIH now **requires** a (2 p) data management and sharing plan
-- If not sharing, must justify reasons
-- If planning to share, plans become formal part of award agreement
+-- @National-Institutes-of-HealthUnknown-ys
+
+## NIH Data Management and Sharing Plan (DMS)
+
+![](include/img/nih-dms-2023-01-25.png)
+
+## NIH Data Management and Sharing Plan (DMS)
+
+- 2p DMS plan **required**
+- Must justify reasons if not sharing
+- Sharing plans become formal part of award agreement
 
 ---
 
@@ -150,7 +186,10 @@ Other researchers
 ---
 
 :::: {.columns}
-::: {.column width=50%}
+::: {.column width=60%}
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
+:::
+::: {.column width=40%}
 - *Required by funder*, journal, institution
 - *Encouraged by funder*, *journal*, *institution*
 
@@ -159,9 +198,6 @@ Other researchers
 - **Garner citations, recognition, bigger/more grants**
 :::
 :::
-::: {.column width=50%}
-![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-04.png)
-:::
 ::::
 
 # How
@@ -169,6 +205,10 @@ Other researchers
 ---
 
 ![Giphy](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjRrM2I1aHE4amd3cno5dmtpMmM2eG5wbDI3ZGhudGxrZ24xc2t2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBjOqZ6h0ili0/giphy.gif)
+
+---
+
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazcxZnhweGZwdG0xMmF1OGtnZ3Rmd25qb2xhb2p2c29mMjZxd3oxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13ioucdKE8s9lC/giphy.gif)
 
 ---
 
@@ -295,14 +335,17 @@ Plan your workflow in as much detail as you possibly can before you start.
 ::: {.callout-important}
 ## Lesson learned
 
-Evaluate, revise, and update.
+Plans change.
+
+So, evaluate, revise, and update.
 
 Document what you changed, when, and why.
 
 :::
 :::
 
-::: {.fragment}
+## Lessons learned
+
 ::: {.callout-note}
 ## Recommended practice
 
@@ -310,21 +353,24 @@ Version your protocol.
 
 *Manual is fine*: e.g, `nsf-2412345-protocol-2025-12-02v01.docx`.
 
-*Automated is better*: Google Docs keeps version histories. [Quarto](https://quarto.org) enables git-versioned web sites as protocols.
+*Automated is better*: 
 
-:::
+Google Docs keeps version histories. 
+
+[Quarto](https://quarto.org) enables git-versioned web sites as protocols.
 :::
 
 ## Examples
 
 ::: {.incremental}
-- Open Scholarship Survey
+- Open Scholarship Survey (2022-23)
   - [IRB protocol](https://penn-state-open-science.github.io/survey-fall-2022/hrp-591.html) + [data processing](https://penn-state-open-science.github.io/survey-fall-2022/data-gathering-and-cleaning.html) and [visualization pipeline](https://penn-state-open-science.github.io/survey-fall-2022/data-visualization.html)
 - Play & Learning Across a Year (PLAY Project)
   - Project [site](https://play-project.org) and [protocol](https://play-project.org/collection.html)
   - Survey [data cleaning and visualization](https://play-project.org/KoBoToolbox)
 
 :::
+
 
 ---
 
@@ -371,6 +417,17 @@ Version your protocol.
 ::::
 
 -- @Gilmore2015-oj
+
+---
+
+::: {.callout-important}
+## Lesson learned
+
+Documented plans & practices can be reused for new projects.
+
+Be kind to your future (forgetful) self.
+
+:::
 
 ---
 
@@ -431,6 +488,15 @@ Version your protocol.
 
 - Raw data live in secure place
 - Use API calls to gather, clean, process
+
+::: {.fragment}
+::: {.callout-important}
+## (Painful) lesson learned
+
+APIs can change, so be prepared to update your procedures & code.
+
+:::
+:::
 
 # Where
 
@@ -542,6 +608,7 @@ Version your protocol.
 - [Open Scholarship Initiative](https://penn-state-open-science.github.io)
 - Open Scholarship Bootcamp [2025](https://penn-state-open-science.github.io/bootcamp-2025/), [2023](https://penn-state-open-science.github.io/bootcamp-2023/)
 - Data management workshops [2025](https://penn-state-open-science.github.io/data-mgmt-2025/), [2024](https://penn-state-open-science.github.io/data-mgmt-2024/)
+- Data paper [workshop](https://penn-state-open-science.github.io/bootcamp-2025/sessions.html#getting-credit-for-sharing-your-data-part-iii-data-papers)
 
 # Wrap-up
 
