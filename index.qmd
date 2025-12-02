@@ -8,9 +8,15 @@ author: "Rick Gilmore & Alaina Pearce"
 
 ---
 
+{{< video https://www.youtube.com/watch?v=66oNv_DJuPc width="100%" height="70%" >}}
+
+-- @NYU_Health_Sciences_Library2013-gp
+
+---
+
 ```{r}
 #| label: fig-sleic-talk-qr
-#| fig-cap: "https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/"
+#| fig-cap: "<https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/>"
 plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-practices-2025-12-02/"))
 ```
 
@@ -32,6 +38,10 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 ::::
 
 # Our hidden agenda
+
+## 
+
+![<https://penn-state-open-science.github.io>](include/img/osi-home.png)
 
 ## Best practices in
 
@@ -59,6 +69,23 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 >...such an analysis suggests that **researchers may have a positive duty to share data** in order to maximize the contribution that individual participants have made.
 
 -- @Brakewood2013-wj
+
+<!-- ## Ethical data sharing -->
+
+<!-- :::: {.columns} -->
+<!-- ::: {.column width=50%} -->
+<!-- - **F**indable -->
+<!-- - **A**ccessible -->
+<!-- - **I**nteroperable -->
+<!-- - **R**eusable -->
+
+<!-- -- @Wilkinson2016-qr -->
+<!-- ::: -->
+<!-- ::: {.column width=50%} -->
+<!-- ![@Carroll2020-mo](include/img/care-principles-datapng.png) -->
+<!-- ::: -->
+<!-- :::: -->
+
 
 ## {auto-animate=true}
 
@@ -122,10 +149,10 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 ## {auto-animate=true}
 
 :::: {.columns}
-::: {.column width=50%}
+::: {.column width=60%}
 ![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-2018-fig-03b.png)
 :::
-::: {.column width=50%}
+::: {.column width=40%}
 ::: {.fragment}
 - Invalid conclusions
 - Control over IP
