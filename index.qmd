@@ -490,7 +490,7 @@ mkdir -p project/data/sub-control01/{anat,func,dwi,fmap}
 ## Automate
 
 - Capture data in electronic form as much as possible
-  - e.g., Qualtrix, Google Forms, REDCap, [KoBoToolbox](https://kobotoolbox.org)
+  - e.g., Qualtrics, Google Forms, REDCap, [KoBoToolbox](https://kobotoolbox.org)
 - Let the computer do tedious, repetitive, error-prone work
   - e.g., data export & cleaning
   - Code as documentation
