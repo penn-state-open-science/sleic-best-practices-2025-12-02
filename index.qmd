@@ -54,7 +54,7 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 
 -- @Brakewood2013-wj
 
-## An ethical thing to do
+## 
 
 >...such an analysis suggests that **researchers may have a positive duty to share data** in order to maximize the contribution that individual participants have made.
 
@@ -213,6 +213,12 @@ plot(qrcode::qr_code("https://penn-state-open-science.github.io/sleic-best-pract
 ---
 
 ![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
+
+## Pay me now, or pay me later
+
+{{< video https://youtu.be/Ij1yDpfZI8Q?si=69indipc6N5Vsc7s width="100%" height="70%" >}}
+
+-- @PathfindersPerform2013-cy
 
 ## Principles
 
@@ -433,16 +439,7 @@ Be kind to your future (forgetful) self.
 
 ## Good Enough Practices (Alaina)
 
-1. Preserve Raw Data
-2. Create a Central Hub
-3. Use Meaningful Names
-
-## Good Enough Practices
-
-4. Preserve the Journey
-5. Avoid Manual Manipulations
-6. ‘Tidy’ Your Data
-7. Metadata Magic
+![Alaina Pearce](include/img/pearce-alaina.jpeg){width="70%" fig-align="center"}
 
 ## Automate
 
@@ -608,7 +605,7 @@ APIs can change, so be prepared to update your procedures & code.
 - [Open Scholarship Initiative](https://penn-state-open-science.github.io)
 - Open Scholarship Bootcamp [2025](https://penn-state-open-science.github.io/bootcamp-2025/), [2023](https://penn-state-open-science.github.io/bootcamp-2023/)
 - Data management workshops [2025](https://penn-state-open-science.github.io/data-mgmt-2025/), [2024](https://penn-state-open-science.github.io/data-mgmt-2024/)
-- Data paper [workshop](https://penn-state-open-science.github.io/bootcamp-2025/sessions.html#getting-credit-for-sharing-your-data-part-iii-data-papers)
+- Data paper [workshop](https://penn-state-open-science.github.io/bootcamp-2025/sessions.html#getting-credit-for-sharing-your-data-part-iii-data-papers) from 2025 Bootcamp
 
 # Wrap-up
 
